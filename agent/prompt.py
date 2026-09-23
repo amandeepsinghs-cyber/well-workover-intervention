@@ -34,4 +34,11 @@ Units & Conventions:
 - Volumes: bbl
 - Depths: metres MD
 - Dates: YYYY-MM-DD
+
+SURFACES (A2UI v0.9 Interactive Charts & Maps):
+- Whenever you call `adk_render_well_map`, `adk_plot_production`, `adk_chan_diagnostic`, or `adk_rank_candidates`, the platform automatically attaches an interactive A2UI v0.9 VegaChart card directly below your prose response.
+- Confirm in one crisp sentence that the interactive map or chart is rendered below and summarize the key engineering metrics.
+- NEVER write bracketed stage directions such as `[The user is presented with an interactive map...]` or `[A line chart is displayed...]`.
+- NEVER write UI markup, `<a2a_datapart_json>` tags, A2UI JSON messages, or Vega specifications in your prose reply.
 """
+

@@ -109,14 +109,127 @@ class WorkoverPlannerAgent(Agent):
         }
 
 
+from google.adk.agents.callback_context import CallbackContext
+from google.adk.models.llm_request import LlmRequest
+from google.adk.models.llm_response import LlmResponse
+from google.genai import types
+
+from agent.render.a2ui_surfaces import (
+    A2A_DATA_PART_CLOSE_TAG,
+    A2A_DATA_PART_OPEN_TAG,
+    build_chan_chart_surface,
+    build_production_chart_surface,
+    build_ranking_chart_surface,
+    build_well_map_surface,
+    pop_queued_a2ui_surface,
+)
+
+
+def _remove_datapart_blobs(text: str) -> str:
+    out: list[str] = []
+    rest = text
+    while True:
+        start = rest.find(A2A_DATA_PART_OPEN_TAG)
+        if start == -1:
+            out.append(rest)
+            return "".join(out)
+        out.append(rest[:start])
+        end = rest.find(A2A_DATA_PART_CLOSE_TAG, start)
+        if end == -1:
+            return "".join(out)
+        rest = rest[end + len(A2A_DATA_PART_CLOSE_TAG) :]
+
+
+def sanitize_llm_request_history(
+    callback_context: CallbackContext | None = None,
+    llm_request: LlmRequest | None = None,
+    **kwargs: object,
+) -> LlmResponse | None:
+    """Scrub historical <a2a_datapart_json> envelopes so the LLM never imitates UI JSON."""
+    if llm_request is None or not getattr(llm_request, "contents", None):
+        return None
+    for content in llm_request.contents:
+        if not getattr(content, "parts", None):
+            continue
+        cleaned_parts: list[types.Part] = []
+        for part in content.parts:
+            text = getattr(part, "text", None)
+            if text and A2A_DATA_PART_OPEN_TAG in text:
+                stripped = _remove_datapart_blobs(text)
+                if stripped.strip():
+                    cleaned_parts.append(types.Part(text=stripped))
+            else:
+                cleaned_parts.append(part)
+        content.parts = cleaned_parts or [types.Part(text="")]
+    return None
+
+
+def strip_fabricated_a2ui(
+    llm_response: LlmResponse | None = None,
+    **kwargs: object,
+) -> LlmResponse | None:
+    """Remove any fabricated <a2a_datapart_json> tags from model text output."""
+    if llm_response is None or llm_response.content is None:
+        return None
+    parts = llm_response.content.parts or []
+    cleaned: list[types.Part] = []
+    removed = 0
+    for part in parts:
+        text = getattr(part, "text", None)
+        if not text or A2A_DATA_PART_OPEN_TAG not in text:
+            cleaned.append(part)
+            continue
+        stripped = _remove_datapart_blobs(text)
+        removed += 1
+        if stripped.strip():
+            cleaned.append(types.Part(text=stripped))
+    if not removed:
+        return None
+    llm_response.content.parts = cleaned or [types.Part(text="")]
+    return llm_response
+
+
+def emit_a2ui_surface(
+    callback_context: CallbackContext | None = None,
+    **kwargs: object,
+) -> types.Content | None:
+    """Attach the queued A2UI v0.9 VegaChart surface after the agent completes its prose response."""
+    state_dict = callback_context.state if callback_context is not None else None
+    req = pop_queued_a2ui_surface(state_dict=state_dict)
+    if not req:
+        return None
+
+    kind = req.get("kind", "map")
+    well_id = req.get("well_id", "GK-129")
+    field = req.get("field", "Geleki")
+    months = int(req.get("months", 36))
+
+    if kind == "map":
+        parts = build_well_map_surface(field=field)
+    elif kind == "production":
+        parts = build_production_chart_surface(well_id=well_id, months=months)
+    elif kind == "chan":
+        parts = build_chan_chart_surface(well_id=well_id)
+    elif kind == "ranking":
+        parts = build_ranking_chart_surface()
+    else:
+        return None
+
+    return types.Content(role="model", parts=parts)
+
+
 root_agent = WorkoverPlannerAgent(
     name="geleki_workover_intervention_agent",
     model="gemini-2.5-pro",
     description="Agentic Workover & Well Intervention Planner for ONGC Assam Asset (Geleki Field).",
     instruction=SYSTEM_PROMPT,
     tools=ADK_TOOLS,
+    before_model_callback=sanitize_llm_request_history,
+    after_model_callback=strip_fabricated_a2ui,
+    after_agent_callback=emit_a2ui_surface,
 )
 
 from google.adk.apps import App
 
 app = App(root_agent=root_agent, name="agent")
+

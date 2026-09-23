@@ -35,6 +35,10 @@ from tools import (
 )
 
 
+from google.adk.tools.tool_context import ToolContext
+from agent.render.a2ui_surfaces import queue_a2ui_surface
+
+
 def _to_json_safe(obj: Any) -> Any:
     if obj is None or isinstance(obj, (str, int, float, bool)):
         return obj
@@ -64,8 +68,9 @@ def adk_render_well_map(
     size_by: str = "oil_rate_bopd",
     colour_by: str = "trigger_state",
     include_shut_in: bool = True,
+    tool_context: ToolContext | None = None,
 ) -> dict:
-    """TC-016: Render interactive Vega-Lite map of 142 Geleki wells sized by rate and coloured by status/urgency."""
+    """TC-016: Render interactive A2UI v0.9 VegaChart map of 142 Geleki wells sized by rate and coloured by status/urgency."""
     res = render_well_map(
         field=field,
         as_of=_parse_date(as_of),
@@ -73,7 +78,22 @@ def adk_render_well_map(
         colour_by=colour_by,  # type: ignore[arg-type]
         include_shut_in=include_shut_in,
     )
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "map",
+        field=field,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        # Remove raw vega_lite_spec from LLM text context so the model does not echo JSON
+        out["value"].pop("vega_lite_spec", None)
+        out["value"]["a2ui_surface_attached"] = True
+        out["value"]["ui_instruction"] = (
+            "The interactive A2UI v0.9 spatial map card is automatically attached below your prose reply. "
+            "Confirm in one sentence that the interactive map is rendered below and summarize the well counts. "
+            "NEVER write bracketed placeholder text like [The user is presented with...]."
+        )
+    return out
 
 
 def adk_fit_decline_curve(
@@ -90,10 +110,19 @@ def adk_chan_diagnostic(
     well_id: str,
     as_of: str = "2026-09-23",
     window_days: int = 90,
+    tool_context: ToolContext | None = None,
 ) -> dict:
-    """TC-002: Run Chan (SPE-30775) log-log WOR and WOR' derivative slope diagnostic with paired-injector check."""
+    """TC-002: Run Chan (SPE-30775) log-log WOR and WOR' derivative slope diagnostic with paired-injector check and A2UI plot."""
     res = chan_diagnostic(well_id=well_id, as_of=_parse_date(as_of), window_days=window_days)
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "chan",
+        well_id=well_id,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        out["value"]["a2ui_surface_attached"] = True
+    return out
 
 
 def adk_fillage_proxy(
@@ -169,10 +198,19 @@ def adk_rank_candidates(
     field: str = "Geleki",
     as_of: str = "2026-09-23",
     realisation_per_bbl: float = 6200.0,
+    tool_context: ToolContext | None = None,
 ) -> dict:
-    """TC-010: Rank flagged intervention candidates into separate RIG and RIGLESS queues by net value per rig-day."""
+    """TC-010: Rank flagged intervention candidates into separate RIG and RIGLESS queues by net value per rig-day and attach A2UI priority bar chart."""
     res = rank_candidates(field=field, as_of=_parse_date(as_of), realisation_per_bbl=realisation_per_bbl)
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "ranking",
+        field=field,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        out["value"]["a2ui_surface_attached"] = True
+    return out
 
 
 def adk_check_mro(
@@ -229,15 +267,30 @@ def adk_plot_production(
     months: int = 36,
     overlay_decline_fit: bool = True,
     overlay_interventions: bool = True,
+    tool_context: ToolContext | None = None,
 ) -> dict:
-    """TC-017: Plot multi-year daily oil, water, liquid, and water-cut series (preserving NULL gaps on shut-in days)."""
+    """TC-017: Plot multi-year daily oil, water, liquid, and water-cut series as an interactive A2UI v0.9 dual-panel chart."""
     res = plot_production(
         well_id=well_id,
         months=months,
         overlay_decline_fit=overlay_decline_fit,
         overlay_interventions=overlay_interventions,
     )
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "production",
+        well_id=well_id,
+        months=months,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        out["value"]["a2ui_surface_attached"] = True
+        out["value"]["ui_instruction"] = (
+            "The interactive A2UI v0.9 dual-panel production and water-cut chart is automatically attached below your prose reply. "
+            "Confirm in one sentence that the interactive chart is displayed below and summarize the key trends and failed 2019 WSO intervention. "
+            "NEVER write bracketed stage directions like [A line chart is displayed...]."
+        )
+    return out
 
 
 def adk_query_wells(

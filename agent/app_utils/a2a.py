@@ -152,16 +152,9 @@ async def attach_a2a_routes(
     capabilities: AgentCapabilities | None = None,
     agent_version: str | None = None,
     app_url: str | None = None,
+    executor: Any | None = None,
 ) -> None:
-    """Register A2A routes (JSON-RPC + agent-card endpoints) under ``rpc_path``.
-
-    Builds a dynamic agent card from ``agent`` and mounts the routes on ``app``.
-    The ``runner`` should share the session/artifact/memory services with the
-    standard ADK path. ``capabilities``, ``agent_version``, and ``app_url``
-    override their defaults (streaming + ADK extension, ``AGENT_VERSION``,
-    ``APP_URL``). Call once per app — typically in a FastAPI ``lifespan``, since
-    the card is built asynchronously; repeated calls register duplicate routes.
-    """
+    """Register A2A routes (JSON-RPC + agent-card endpoints) under ``rpc_path``."""
     resolved_app_url = _resolve_app_url(app_url)
     resolved_agent_version = agent_version or os.getenv("AGENT_VERSION", "0.1.0")
     resolved_capabilities = capabilities or _default_capabilities()
@@ -173,8 +166,12 @@ async def attach_a2a_routes(
         agent_version=resolved_agent_version,
     ).build()
 
+    resolved_executor = executor or A2aAgentExecutor(runner=runner)
+    if hasattr(resolved_executor, "set_agent_card"):
+        resolved_executor.set_agent_card(agent_card)
+
     request_handler = DefaultRequestHandler(
-        agent_executor=A2aAgentExecutor(runner=runner),
+        agent_executor=resolved_executor,
         task_store=task_store,
         agent_card=agent_card,
     )

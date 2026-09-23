@@ -162,3 +162,26 @@ def test_stage_f_agent_4_turns():
     assert len(t3["tool_trace"]) == 10
     assert "where_the_system_was_wrong" in t4["monthly"]["value"]
 
+
+def test_a2ui_v09_surfaces():
+    from agent.adk_tools import adk_plot_production, adk_render_well_map
+    from agent.agent import emit_a2ui_surface
+
+    # 1. Test 1 Map A2UI surface emission
+    adk_render_well_map(field="Geleki")
+    map_content = emit_a2ui_surface()
+    assert map_content is not None
+    assert len(map_content.parts) == 3
+    for p in map_content.parts:
+        raw = p.inline_data.data.decode("utf-8")
+        assert raw.startswith("<a2a_datapart_json>")
+        assert raw.endswith("</a2a_datapart_json>")
+        assert '"mimeType":"application/json+a2ui"' in raw
+
+    # 2. Test 2 Production Plot A2UI surface emission
+    adk_plot_production(well_id="GK-129", months=36)
+    prod_content = emit_a2ui_surface()
+    assert prod_content is not None
+    assert len(prod_content.parts) == 3
+
+
