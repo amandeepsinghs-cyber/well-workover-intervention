@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-124
+TITLE      : Well Completion & CBL Report GK-124
+WELL ID    : GK-124
+DATE       : 1974-02-12
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-124_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-124 (COMPLETION_REPORT).

@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-027
+TITLE      : Well Completion & CBL Report GK-027
+WELL ID    : GK-027
+DATE       : 1983-10-29
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-027_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-027 (COMPLETION_REPORT).

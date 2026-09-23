@@ -1,0 +1,16 @@
+item_code,item_name,base,qty_on_hand,transit_days,_ingested_at,_source_system,_source_file,_batch_id
+SRP_PLUNGER_150,Insert Pump Plunger 1.50 in,NAZIRA,15,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+SRP_PLUNGER_125,Insert Pump Plunger 1.25 in,NAZIRA,8,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+SRP_VALVE_ROD,Valve Rod Assembly,NAZIRA,12,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+ROD_GRADE_D_78,Sucker Rod Grade D 7/8 in (box of 50),NAZIRA,25,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+ROD_GRADE_K_78,Sucker Rod Grade K 7/8 in (box of 50),NAZIRA,10,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+TUBING_J55_278,Tubing 2-7/8 in J-55 (joints),NAZIRA,120,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+TUBING_L80_278,Tubing 2-7/8 in L-80 (joints),NAZIRA,80,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+PARAFFIN_SOLVENT_BBL,Paraffin Solvent Blend (Barrels),NAZIRA,40,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+SCALE_INHIBITOR_DRUM,Scale Inhibitor Chemical (Drums),NAZIRA,20,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+CEMENT_RETAINER_55,Mechanical Cement Retainer 5.5 in,NAZIRA,0,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+CEMENT_RETAINER_55,Mechanical Cement Retainer 5.5 in,SIVASAGAR,4,2,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+BRIDGE_PLUG_55,Cast Iron Bridge Plug 5.5 in,NAZIRA,6,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+POLISHED_ROD_125,Polished Rod 1-1/4 in x 26 ft,NAZIRA,5,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+GAS_LIFT_VALVE_1IN,Operating Gas Lift Valve 1 in,NAZIRA,18,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1
+GAS_LIFT_ORIFICE_1IN,Gas Lift Orifice Valve 1 in,NAZIRA,12,0,2026-09-23T16:00:00Z,GENERATOR,gs://well-workover-intervention-data/landing/generator/2026/09/23/mro_inventory.parquet,BATCH-GELEKI-20260923-V1

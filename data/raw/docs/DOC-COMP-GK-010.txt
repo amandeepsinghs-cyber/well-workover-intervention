@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-010
+TITLE      : Well Completion & CBL Report GK-010
+WELL ID    : GK-010
+DATE       : 1986-10-02
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-010_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-010 (COMPLETION_REPORT).

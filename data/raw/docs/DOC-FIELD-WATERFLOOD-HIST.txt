@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-FIELD-WATERFLOOD-HIST
+TITLE      : History of Water Injection in Geleki Asset
+WELL ID    : FIELD_WIDE
+DATE       : 2018-03-15
+GCS URI    : gs://well-workover-intervention-data/documents/field/DOC-FIELD-WATERFLOOD-HIST.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for FIELD_WIDE (OTHER).

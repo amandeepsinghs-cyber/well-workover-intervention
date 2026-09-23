@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-CBL-GK129-1998
+TITLE      : Cement Bond Log & Micro-Annulus Report GK-129 (1998)
+WELL ID    : GK-129
+DATE       : 1998-04-15
+GCS URI    : gs://well-workover-intervention-data/documents/workover/GK129_1998_CBL_scan.pdf
+------------------------------------------------------------
+FINDING: CBL amplitude 42-55 mV across 2795-2840m MD (Tipam TS-5A shale barrier), indicating channelled primary cement sheath behind 5.5-in casing.

@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-119
+TITLE      : Well Completion & CBL Report GK-119
+WELL ID    : GK-119
+DATE       : 1976-04-29
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-119_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-119 (COMPLETION_REPORT).

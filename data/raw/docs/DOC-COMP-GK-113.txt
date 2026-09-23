@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-113
+TITLE      : Well Completion & CBL Report GK-113
+WELL ID    : GK-113
+DATE       : 1981-08-16
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-113_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-113 (COMPLETION_REPORT).

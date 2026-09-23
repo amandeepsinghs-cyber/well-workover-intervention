@@ -1,0 +1,14 @@
+name: "workover-optimizer"
+acli_version: "1.4.2"
+agent_directory: "agent"
+region: "asia-south1"
+base_template: "local_workover_well_intervention"
+generated_at: "2026-09-23T17:01:05.347238+00:00"
+language: "python"
+create_params:
+  deployment_target: "agent_runtime"
+  session_type: "none"
+  cicd_runner: "skip"
+  is_a2a: true
+  agent_gateway: False
+  agent_guidance_filename: "GEMINI.md"

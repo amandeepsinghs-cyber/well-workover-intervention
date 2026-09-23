@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "name": "geleki_field_assam",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geleki Field Boundary",
+        "block_id": "GELEKI_PERIMETER",
+        "asset": "ONGC Assam Asset"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [94.762, 26.918],
+          [94.815, 26.918],
+          [94.860, 26.968],
+          [94.860, 27.005],
+          [94.805, 27.005],
+          [94.762, 26.955],
+          [94.762, 26.918]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tipam Main High (North-East)",
+        "block_id": "FB_NE_TIPAM_MAIN",
+        "dominant_zone": "Tipam"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [94.812, 26.965],
+          [94.854, 26.965],
+          [94.854, 27.000],
+          [94.812, 27.000],
+          [94.812, 26.965]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Fault Block",
+        "block_id": "FB_CENTRAL",
+        "dominant_zone": "Barail"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [94.788, 26.940],
+          [94.828, 26.940],
+          [94.828, 26.972],
+          [94.788, 26.972],
+          [94.788, 26.940]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South-West Flank",
+        "block_id": "FB_SW_FLANK",
+        "dominant_zone": "Lakadong"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [94.765, 26.920],
+          [94.802, 26.920],
+          [94.802, 26.952],
+          [94.765, 26.952],
+          [94.765, 26.920]
+        ]]
+      }
+    }
+  ]
+}

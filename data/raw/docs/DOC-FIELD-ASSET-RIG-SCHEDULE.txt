@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-FIELD-ASSET-RIG-SCHEDULE
+TITLE      : Assam Asset Rig Deployment Matrix 2025-2026
+WELL ID    : FIELD_WIDE
+DATE       : 2025-12-10
+GCS URI    : gs://well-workover-intervention-data/documents/field/DOC-FIELD-ASSET-RIG-SCHEDULE.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for FIELD_WIDE (OTHER).

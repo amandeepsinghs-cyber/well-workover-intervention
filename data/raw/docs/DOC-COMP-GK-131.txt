@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-COMP-GK-131
+TITLE      : Well Completion & CBL Report GK-131
+WELL ID    : GK-131
+DATE       : 1986-06-01
+GCS URI    : gs://well-workover-intervention-data/documents/completion/GK-131_completion.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for GK-131 (COMPLETION_REPORT).

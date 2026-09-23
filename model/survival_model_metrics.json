@@ -1,0 +1,43 @@
+{
+  "model_version": "coxph-v1.0-geleki",
+  "lift_subset": "SRP_ONLY",
+  "n_episodes_total": 660,
+  "n_episodes_train": 454,
+  "n_episodes_holdout": 206,
+  "right_censored_fraction": 0.1227,
+  "holdout_c_index": 0.7128,
+  "trigger_b_c_index": 0.7061,
+  "c_index_gain_over_trigger_b": 0.0066,
+  "target_band": [
+    0.65,
+    0.72
+  ],
+  "gates_passed": true,
+  "coefficients": {
+    "liquid_rate_obs": {
+      "coef": 0.0032127334825222385,
+      "exp(coef)": 1.0032178998419674,
+      "p": 3.722606839020504e-27
+    },
+    "wc_sq_obs": {
+      "coef": 0.25882878603894754,
+      "exp(coef)": 1.295411993221414,
+      "p": 0.12597802558495666
+    },
+    "fillage_gap_obs": {
+      "coef": -0.0006107296058800992,
+      "exp(coef)": 0.9993894568514854,
+      "p": 0.7726739592664541
+    },
+    "chp_obs": {
+      "coef": -0.011523478827524787,
+      "exp(coef)": 0.9885426621527756,
+      "p": 0.37687663806475635
+    },
+    "well_age_days": {
+      "coef": -9.852857427663373e-06,
+      "exp(coef)": 0.9999901471911116,
+      "p": 0.5537242944743884
+    }
+  }
+}

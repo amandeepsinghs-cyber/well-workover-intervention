@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-FIELD-WAX-FLOWLINE-MAP
+TITLE      : Geleki Surface Flowline Wax Scraping Protocol
+WELL ID    : FIELD_WIDE
+DATE       : 2021-09-20
+GCS URI    : gs://well-workover-intervention-data/documents/field/DOC-FIELD-WAX-FLOWLINE-MAP.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for FIELD_WIDE (OTHER).

@@ -1,0 +1,38 @@
+[project]
+name = "well-workover-intervention"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amandeep Saini", email = "amandeepsinghs@google.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "a2a-sdk[http-server]>=1.0,<2",
+    "aiohttp>=3.13.4",
+    "gcsfs>=2024.11.0",
+    "google-adk[gcp,otel-gcp]>=2.6.0,<3.0.0",
+    "google-cloud-bigquery>=3.45.2",
+    "google-cloud-storage>=3.14.1",
+    "lifelines>=0.30.3",
+    "numpy>=2.4.6",
+    "opentelemetry-resourcedetector-gcp<=1.12.0a0",
+    "pandas>=2.3.3",
+    "pyarrow>=25.0.1",
+    "pytest>=9.1.1",
+    "ruff>=0.16.8",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.17.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent", "tools", "model", "generator"]
+
+

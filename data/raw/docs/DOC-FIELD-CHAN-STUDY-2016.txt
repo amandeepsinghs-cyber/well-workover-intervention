@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-FIELD-CHAN-STUDY-2016
+TITLE      : Upper Assam Water Production Diagnostic Review
+WELL ID    : FIELD_WIDE
+DATE       : 2016-11-05
+GCS URI    : gs://well-workover-intervention-data/documents/field/DOC-FIELD-CHAN-STUDY-2016.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for FIELD_WIDE (OTHER).

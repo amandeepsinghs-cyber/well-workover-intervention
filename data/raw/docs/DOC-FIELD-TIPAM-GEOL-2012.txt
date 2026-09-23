@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-FIELD-TIPAM-GEOL-2012
+TITLE      : Tipam Sand Reservoir Geological Study Geleki
+WELL ID    : FIELD_WIDE
+DATE       : 2012-06-01
+GCS URI    : gs://well-workover-intervention-data/documents/field/DOC-FIELD-TIPAM-GEOL-2012.pdf
+------------------------------------------------------------
+Archival ONGC Assam Asset engineering report for FIELD_WIDE (COMPLETION_REPORT).

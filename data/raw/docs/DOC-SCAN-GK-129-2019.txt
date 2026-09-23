@@ -1,0 +1,7 @@
+DOCUMENT ID: DOC-SCAN-GK-129-2019
+TITLE      : GK-129 Workover Completion Report — Straddle Packer WSO (May 2019)
+WELL ID    : GK-129
+DATE       : 2019-05-14
+GCS URI    : gs://well-workover-intervention-data/docs/GK-129_2019_wso_report.pdf
+------------------------------------------------------------
+FINDING: Straddle packer set at 2812-2828m MD across TS-5A upper perfs. Post-job WC dropped to 54% for 14 months before annular bypass resumed behind poorly cemented casing. OUTCOME: FAILED at 14 months.
