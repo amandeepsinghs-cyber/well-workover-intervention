@@ -68,9 +68,15 @@ def adk_render_well_map(
     size_by: str = "oil_rate_bopd",
     colour_by: str = "trigger_state",
     include_shut_in: bool = True,
+    focus_well_id: str = "",
+    cluster: str = "",
+    radius_deg: float = 0.018,
     tool_context: ToolContext | None = None,
 ) -> dict:
-    """TC-016: Render interactive A2UI v0.9 VegaChart map of 142 Geleki wells sized by rate and coloured by status/urgency."""
+    """TC-016: Render interactive A2UI v0.9 satellite GIS + VegaChart map of Geleki wells.
+    Supports full-field view or zooming into a specific well (`focus_well_id`, e.g. 'GK-141', 'GK-129')
+    or fault-block cluster (`cluster`, e.g. 'NE', 'CENTRAL', 'SW', 'URGENT').
+    """
     res = render_well_map(
         field=field,
         as_of=_parse_date(as_of),
@@ -81,6 +87,9 @@ def adk_render_well_map(
     queue_a2ui_surface(
         "map",
         field=field,
+        focus_well_id=focus_well_id,
+        cluster=cluster,
+        radius_deg=radius_deg,
         state_dict=tool_context.state if tool_context is not None else None,
     )
     out = _to_json_safe(res)
@@ -88,9 +97,12 @@ def adk_render_well_map(
         # Remove raw vega_lite_spec from LLM text context so the model does not echo JSON
         out["value"].pop("vega_lite_spec", None)
         out["value"]["a2ui_surface_attached"] = True
+        out["value"]["focus_well_id"] = focus_well_id.strip().upper() if focus_well_id else ""
+        out["value"]["cluster"] = cluster.strip().upper() if cluster else ""
         out["value"]["ui_instruction"] = (
-            "The interactive A2UI v0.9 spatial map card is automatically attached below your prose reply. "
-            "Confirm in one sentence that the interactive map is rendered below and summarize the well counts. "
+            "The interactive A2UI v0.9 spatial map card (with satellite crop zoom and mouse-wheel pan/zoom) "
+            "is automatically attached below your prose reply. Confirm in one sentence that the interactive map "
+            "is rendered below and summarize the visible wells. "
             "NEVER write bracketed placeholder text like [The user is presented with...]."
         )
     return out
@@ -246,20 +258,40 @@ def adk_generate_report(
     field: str = "Geleki",
     period: str = "WEEKLY",
     as_of: str = "2026-09-23",
+    tool_context: ToolContext | None = None,
 ) -> dict:
     """TC-014: Generate DAILY, WEEKLY, or MONTHLY executive workover report from well_run (includes Where the system was wrong)."""
     res = generate_report(field=field, period=period, as_of=_parse_date(as_of))  # type: ignore[arg-type]
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "report",
+        field=field,
+        period=period,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        out["value"]["a2ui_surface_attached"] = True
+    return out
 
 
 def adk_schedule_rigs(
     field: str = "Geleki",
     as_of: str = "2026-09-23",
     horizon_days: int = 30,
+    tool_context: ToolContext | None = None,
 ) -> dict:
     """TC-015: Optimize workover rig schedule across Assam rig fleet while routing rigless jobs to surface crews."""
     res = schedule_rigs(field=field, as_of=_parse_date(as_of), horizon_days=horizon_days)
-    return _to_json_safe(res)
+    queue_a2ui_surface(
+        "report",
+        field=field,
+        period="WEEKLY",
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    out = _to_json_safe(res)
+    if isinstance(out.get("value"), dict):
+        out["value"]["a2ui_surface_attached"] = True
+    return out
 
 
 def adk_plot_production(
@@ -311,6 +343,65 @@ def adk_query_wells(
     return _to_json_safe(res)
 
 
+def adk_open_google_maps(
+    field: str = "Geleki",
+    well_id: str = "",
+    cluster: str = "",
+    tool_context: ToolContext | None = None,
+) -> dict:
+    """Open live Google Maps Satellite 3D view for the Geleki field, a specific wellhead (`well_id`, e.g. 'GK-129', 'GK-055', 'GK-141'), or fault-block cluster.
+    Use this tool whenever a user asks to see/open Google Maps, view live satellite imagery, navigate to a well on Google Maps, or switch to Google Maps.
+    """
+    queue_a2ui_surface(
+        "gmaps",
+        field=field,
+        well_id=well_id,
+        cluster=cluster,
+        state_dict=tool_context.state if tool_context is not None else None,
+    )
+    from tools.render_well_map import render_well_map
+
+    res = render_well_map(field=field)
+    wm = res.value
+    target_name = f"{field} Field (Assam)"
+    lat, lon, zoom = 26.9634, 94.8105, 14
+    fw_upper = (well_id or "").strip().upper()
+    well_meta: dict[str, Any] = {}
+    if fw_upper:
+        for p in wm.points:
+            if p.well_id.upper() == fw_upper:
+                lat, lon, zoom = float(p.lat), float(p.lon), 17
+                target_name = f"Well {p.well_id}"
+                well_meta = {
+                    "well_id": p.well_id,
+                    "status": p.colour_key,
+                    "oil_rate_bopd": p.size_value or 0.0,
+                    "zone": p.tooltip.get("current_zone"),
+                    "lift_type": p.tooltip.get("lift_type"),
+                    "water_cut_pct": p.tooltip.get("water_cut_pct"),
+                }
+                break
+
+    sat_url = f"https://www.google.com/maps/@{lat:.5f},{lon:.5f},{zoom}z/data=!3m1!1e3"
+    pin_url = f"https://www.google.com/maps/search/?api=1&query={lat:.5f},{lon:.5f}"
+    return {
+        "status": "SUCCESS",
+        "target": target_name,
+        "latitude": round(lat, 5),
+        "longitude": round(lon, 5),
+        "zoom_level": zoom,
+        "google_maps_satellite_url": sat_url,
+        "google_maps_pin_url": pin_url,
+        "well_metadata": well_meta,
+        "a2ui_surface_attached": True,
+        "ui_instruction": (
+            f"An interactive Google Maps launch card has been attached below. "
+            f"Confirm in one sentence that the live Google Maps Satellite card is attached, summarize the coordinates ({lat:.5f}°N, {lon:.5f}°E), "
+            f"and invite the user to click the launch link to explore in live 3D satellite view."
+        ),
+    }
+
+
 ADK_TOOLS = [
     adk_render_well_map,
     adk_fit_decline_curve,
@@ -330,4 +421,5 @@ ADK_TOOLS = [
     adk_schedule_rigs,
     adk_plot_production,
     adk_query_wells,
+    adk_open_google_maps,
 ]

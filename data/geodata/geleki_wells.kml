@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>ONGC Assam Asset — Geleki Field (142 Wells)</name>
+    <description>Interactive 142-Well Workover &amp; Well Intervention Satellite GIS Layer for Google Earth</description>
+
+    <!-- Status Styles -->
+    <Style id="urgentStyle">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.3</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="flagStyle">
+      <IconStyle>
+        <color>ff0080ff</color>
+        <scale>1.2</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="nojobStyle">
+      <IconStyle>
+        <color>ffffaa00</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="healthyStyle">
+      <IconStyle>
+        <color>ff00cc44</color>
+        <scale>1.0</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="shutinStyle">
+      <IconStyle>
+        <color>ffa0a0a0</color>
+        <scale>0.8</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="boundaryStyle">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>33ffff00</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>ONGC Geleki Concession Lease Boundary</name>
+      <styleUrl>#boundaryStyle</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>94.762,26.918,0 94.815,26.918,0 94.86,26.968,0 94.86,27.005,0 94.805,27.005,0 94.762,26.955,0 94.762,26.918,0</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>GK-001</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-001 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>70.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>65.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94252°N, 94.80102°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80102,26.94252,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-002</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-002 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>115.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93159°N, 94.77585°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77585,26.93159,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-003</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-003 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>73.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95121°N, 94.80183°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80183,26.95121,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-004</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-004 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>120.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>72.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96555°N, 94.81967°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81967,26.96555,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-005</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-005 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>78.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96853°N, 94.81956°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81956,26.96853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-006</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-006 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98443°N, 94.82587°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82587,26.98443,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-007</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-007 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>78.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93440°N, 94.77804°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77804,26.9344,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-008</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-008 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99467°N, 94.84050°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8405,26.99467,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-009</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-009 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>89.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95077°N, 94.80588°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80588,26.95077,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-010</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-010 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>113.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98495°N, 94.83741°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83741,26.98495,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-011</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-011 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>65.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>82.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95012°N, 94.79700°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.797,26.95012,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-012</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-012 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>38.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98739°N, 94.84494°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84494,26.98739,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-013</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-013 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96992°N, 94.81534°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81534,26.96992,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-014</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-014 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>95.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>79.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96392°N, 94.81648°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81648,26.96392,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-015</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-015 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>33.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93779°N, 94.78316°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78316,26.93779,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-016</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-016 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>99.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>77.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99046°N, 94.84015°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84015,26.99046,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-017</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-017 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>26.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>78.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98081°N, 94.83296°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83296,26.98081,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-018</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-018 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>33.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93751°N, 94.78845°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78845,26.93751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-019</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-019 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>81.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94733°N, 94.79667°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79667,26.94733,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-020</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-020 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>31.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>68.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96961°N, 94.82943°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82943,26.96961,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-021</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-021 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>118.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>68.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95098°N, 94.80309°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80309,26.95098,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-022</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-022 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>100.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>70.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96354°N, 94.81817°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81817,26.96354,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-023</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-023 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>106.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>78.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97445°N, 94.83243°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83243,26.97445,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-024</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-024 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>70.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96469°N, 94.80869°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80869,26.96469,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-025</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-025 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>74.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>82.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98597°N, 94.83591°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83591,26.98597,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-026</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-026 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>45.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94987°N, 94.80217°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80217,26.94987,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-027</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-027 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>101.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>83.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95129°N, 94.80568°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80568,26.95129,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-028</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-028 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97564°N, 94.82346°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82346,26.97564,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-029</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-029 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>36.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96084°N, 94.80592°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80592,26.96084,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-030</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-030 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96077°N, 94.81319°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81319,26.96077,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-031</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-031 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97882°N, 94.82567°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82567,26.97882,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-032</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-032 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>26.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93475°N, 94.77723°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77723,26.93475,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-033</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-033 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>98.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>79.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96803°N, 94.82363°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82363,26.96803,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-034</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-034 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>97.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>74.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95046°N, 94.81176°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81176,26.95046,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-035</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-035 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96385°N, 94.80461°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80461,26.96385,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-036</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-036 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>107.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96860°N, 94.81817°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81817,26.9686,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-037</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-037 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>127.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>65.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93427°N, 94.79189°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79189,26.93427,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-038</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-038 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94787°N, 94.78773°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78773,26.94787,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-039</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-039 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>79.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94865°N, 94.80178°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80178,26.94865,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-040</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-040 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>51.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>66.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97422°N, 94.81846°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81846,26.97422,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-041</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-041 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>88.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98215°N, 94.83348°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83348,26.98215,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-042</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-042 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>122.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>79.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96502°N, 94.81587°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81587,26.96502,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-043</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-043 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>59.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>73.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96573°N, 94.81347°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81347,26.96573,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-044</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-044 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>89.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>87.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93032°N, 94.76524°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.76524,26.93032,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-045</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-045 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>97.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>73.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95233°N, 94.79110°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.7911,26.95233,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-046</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-046 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>41.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95876°N, 94.81472°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81472,26.95876,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-047</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-047 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>31.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98997°N, 94.83629°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83629,26.98997,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-048</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-048 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>34.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92941°N, 94.78667°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78667,26.92941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-049</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-049 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97502°N, 94.82112°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82112,26.97502,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-050</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-050 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>92.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>66.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99279°N, 94.84149°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84149,26.99279,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-051</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-051 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>90.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>77.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96757°N, 94.80666°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80666,26.96757,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-052</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-052 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>110.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>74.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95435°N, 94.81863°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81863,26.95435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-053</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-053 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>108.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>68.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96679°N, 94.81044°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81044,26.96679,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-054</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-054 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>102.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>83.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96842°N, 94.81493°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81493,26.96842,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-055</name>
+      <styleUrl>#flagStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-055 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:flagStyle">FLAG</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>15.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>65.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97014°N, 94.82882°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82882,26.97014,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-056</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-056 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>84.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99118°N, 94.84202°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84202,26.99118,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-057</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-057 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95451°N, 94.79937°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79937,26.95451,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-058</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-058 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>61.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97454°N, 94.81583°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81583,26.97454,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-059</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-059 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93707°N, 94.79429°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79429,26.93707,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-060</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-060 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>76.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93358°N, 94.78115°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78115,26.93358,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-061</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-061 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>59.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>72.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98263°N, 94.82882°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82882,26.98263,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-062</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-062 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>72.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>83.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98514°N, 94.84640°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8464,26.98514,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-063</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-063 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>125.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>70.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96531°N, 94.80730°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8073,26.96531,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-064</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-064 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>27.00068°N, 94.84511°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84511,27.00068,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-065</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-065 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>26.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>66.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99754°N, 94.83517°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83517,26.99754,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-066</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-066 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>57.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98772°N, 94.83302°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83302,26.98772,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-067</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-067 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>105.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95304°N, 94.80613°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80613,26.95304,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-068</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-068 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98109°N, 94.83602°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83602,26.98109,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-069</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-069 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97941°N, 94.82279°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82279,26.97941,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-070</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-070 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94446°N, 94.79390°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.7939,26.94446,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-071</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-071 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>33.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93908°N, 94.79251°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79251,26.93908,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-072</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-072 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>134.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>85.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98586°N, 94.83082°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83082,26.98586,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-073</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-073 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>53.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99203°N, 94.84393°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84393,26.99203,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-074</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-074 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>62.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>78.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93315°N, 94.77295°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77295,26.93315,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-075</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-075 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98291°N, 94.83374°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83374,26.98291,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-076</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-076 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98109°N, 94.83270°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8327,26.98109,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-077</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-077 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95752°N, 94.79119°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79119,26.95752,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-078</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-078 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>62.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>72.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.91744°N, 94.76122°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.76122,26.91744,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-079</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-079 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>50.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>66.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99447°N, 94.83574°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83574,26.99447,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-080</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-080 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92923°N, 94.78308°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78308,26.92923,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-081</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-081 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>101.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94865°N, 94.79290°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.7929,26.94865,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-082</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-082 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93391°N, 94.77639°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77639,26.93391,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-083</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-083 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>42.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>77.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96455°N, 94.80887°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80887,26.96455,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-084</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-084 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96986°N, 94.79852°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79852,26.96986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-085</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-085 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>92.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>72.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95910°N, 94.82211°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82211,26.9591,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-086</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-086 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>76.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97706°N, 94.83386°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83386,26.97706,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-087</name>
+      <styleUrl>#flagStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-087 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:flagStyle">FLAG</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>35.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>69.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97549°N, 94.82532°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82532,26.97549,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-088</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-088 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>73.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>82.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97714°N, 94.82558°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82558,26.97714,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-089</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-089 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97334°N, 94.82844°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82844,26.97334,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-090</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-090 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>134.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95687°N, 94.80931°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80931,26.95687,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-091</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-091 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95500°N, 94.79923°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79923,26.955,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-092</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-092 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>69.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>84.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97883°N, 94.84581°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84581,26.97883,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-093</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-093 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>64.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>78.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95963°N, 94.80260°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8026,26.95963,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-094</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-094 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>36.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>74.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98313°N, 94.82361°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82361,26.98313,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-095</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-095 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>34.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93815°N, 94.78636°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78636,26.93815,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-096</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-096 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>88.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99113°N, 94.84254°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84254,26.99113,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-097</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-097 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>81.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92934°N, 94.77758°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77758,26.92934,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-098</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-098 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>114.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95149°N, 94.80137°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80137,26.95149,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-099</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-099 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>55.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95683°N, 94.81824°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81824,26.95683,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-100</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-100 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>105.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95216°N, 94.80414°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80414,26.95216,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-101</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-101 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>127.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>70.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97554°N, 94.81238°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81238,26.97554,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-102</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-102 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>67.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>79.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>27.00073°N, 94.83431°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83431,27.00073,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-103</name>
+      <styleUrl>#flagStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-103 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:flagStyle">FLAG</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>30.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97606°N, 94.82636°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82636,26.97606,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-104</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-104 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>64.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95099°N, 94.81219°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81219,26.95099,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-105</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-105 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>37.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95579°N, 94.80605°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80605,26.95579,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-106</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-106 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>110.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>77.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97593°N, 94.82525°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82525,26.97593,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-107</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-107 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>78.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93144°N, 94.77769°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77769,26.93144,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-108</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-108 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>73.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>77.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99188°N, 94.83007°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83007,26.99188,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-109</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-109 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>52.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95271°N, 94.81254°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81254,26.95271,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-110</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-110 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>27.00185°N, 94.85332°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.85332,27.00185,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-111</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-111 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>87.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>63.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93420°N, 94.76998°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.76998,26.9342,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-112</name>
+      <styleUrl>#urgentStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-112 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:urgentStyle">URGENT</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>29.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>71.3%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95313°N, 94.79961°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79961,26.95313,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-113</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-113 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>41.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>70.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94283°N, 94.79553°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79553,26.94283,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-114</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-114 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>124.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>65.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94695°N, 94.80105°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80105,26.94695,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-115</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-115 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>125.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96231°N, 94.79251°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79251,26.96231,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-116</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-116 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>80.4 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>74.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95586°N, 94.80900°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.809,26.95586,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-117</name>
+      <styleUrl>#flagStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-117 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:flagStyle">FLAG</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>61.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93024°N, 94.78046°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.78046,26.93024,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-118</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-118 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>69.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>70.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96102°N, 94.82662°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82662,26.96102,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-119</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-119 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>87.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>84.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>NATURAL</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96516°N, 94.80856°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80856,26.96516,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-120</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-120 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>130.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>68.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96782°N, 94.81712°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.81712,26.96782,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-121</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-121 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95824°N, 94.80069°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80069,26.95824,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-122</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-122 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>77.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>79.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97817°N, 94.83160°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8316,26.97817,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-123</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-123 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>69.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>76.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92230°N, 94.76884°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.76884,26.9223,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-124</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-124 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>34.9 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94608°N, 94.79128°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79128,26.94608,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-125</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-125 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96513°N, 94.81320°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8132,26.96513,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-126</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-126 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.94528°N, 94.79496°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79496,26.94528,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-127</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-127 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>117.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>74.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>27.00793°N, 94.85070°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.8507,27.00793,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-128</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-128 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>39.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>75.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99925°N, 94.84174°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84174,26.99925,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-129</name>
+      <styleUrl>#urgentStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-129 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:urgentStyle">URGENT</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>13.5 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>84.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.99572°N, 94.82975°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82975,26.99572,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-130</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-130 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>76.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>85.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.96079°N, 94.80827°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80827,26.96079,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-131</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-131 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>35.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>83.9%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98629°N, 94.83724°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83724,26.98629,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-132</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-132 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>73.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.95228°N, 94.80826°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.80826,26.95228,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-133</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-133 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>87.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>81.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98551°N, 94.84003°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.84003,26.98551,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-134</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-134 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>74.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.5%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>GAS_LIFT</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92705°N, 94.77475°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77475,26.92705,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-135</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-135 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>52.2 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>80.6%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.98275°N, 94.83644°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83644,26.98275,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-136</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-136 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>79.1 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>68.4%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97784°N, 94.82985°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.82985,26.97784,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-137</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-137 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>128.3 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>82.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97527°N, 94.83039°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83039,26.97527,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-138</name>
+      <styleUrl>#healthyStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-138 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:healthyStyle">HEALTHY</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>85.8 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>72.2%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.97859°N, 94.83551°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.83551,26.97859,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-147</name>
+      <styleUrl>#flagStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-147 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:flagStyle">FLAG</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>28.6 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>65.8%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Lakadong</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93944°N, 94.78070°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.7807,26.93944,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-214</name>
+      <styleUrl>#urgentStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-214 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:urgentStyle">URGENT</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>13.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>84.1%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.92686°N, 94.77948°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.77948,26.92686,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-141</name>
+      <styleUrl>#nojobStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-141 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:nojobStyle">NO_JOB</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>33.7 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>67.7%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Tipam</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93737°N, 94.79061°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79061,26.93737,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GK-142</name>
+      <styleUrl>#shutinStyle</styleUrl>
+      <description><![CDATA[
+      <h3>GK-142 — ONGC Geleki Field</h3>
+      <table border="1" cellpadding="4" cellspacing="0" style="border-collapse:collapse; font-size:12px;">
+        <tr><td><b>Urgency Status</b></td><td><b style="color:shutinStyle">SHUT_IN</b></td></tr>
+        <tr><td><b>Oil Rate</b></td><td>0.0 BOPD</td></tr>
+        <tr><td><b>Water Cut</b></td><td>0.0%</td></tr>
+        <tr><td><b>Reservoir Formation</b></td><td>Barail</td></tr>
+        <tr><td><b>Artificial Lift</b></td><td>SRP</td></tr>
+        <tr><td><b>Coordinates</b></td><td>26.93417°N, 94.79017°E</td></tr>
+      </table>
+    ]]></description>
+      <Point>
+        <coordinates>94.79017,26.93417,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

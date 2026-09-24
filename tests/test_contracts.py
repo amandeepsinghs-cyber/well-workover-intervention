@@ -152,7 +152,7 @@ def test_stage_f_agent_4_turns():
     from google.adk.agents import Agent
     assert isinstance(root_agent, Agent)
     assert root_agent.name == "geleki_workover_intervention_agent"
-    assert len(root_agent.tools) == 18
+    assert len(root_agent.tools) == 19
     t1 = root_agent.execute_demo_turn_1_map()
     t2 = root_agent.execute_demo_turn_2_pushback()
     t3 = root_agent.execute_demo_turn_3_candidates()
@@ -164,10 +164,10 @@ def test_stage_f_agent_4_turns():
 
 
 def test_a2ui_v09_surfaces():
-    from agent.adk_tools import adk_plot_production, adk_render_well_map
+    from agent.adk_tools import adk_open_google_maps, adk_plot_production, adk_render_well_map
     from agent.agent import emit_a2ui_surface
 
-    # 1. Test 1 Map A2UI surface emission
+    # 1. Test 1 Map A2UI surface emission & coordinate bounding-box check
     adk_render_well_map(field="Geleki")
     map_content = emit_a2ui_surface()
     assert map_content is not None
@@ -177,11 +177,54 @@ def test_a2ui_v09_surfaces():
         assert raw.startswith("<a2a_datapart_json>")
         assert raw.endswith("</a2a_datapart_json>")
         assert '"mimeType":"application/json+a2ui"' in raw
+        inner = json.loads(raw.split("<a2a_datapart_json>")[1].split("</a2a_datapart_json>")[0])
+        if "updateDataModel" in inner["data"]:
+            assert len(raw) < 95000, f"updateDataModel payload too large ({len(raw)} bytes > 95 KB)"
+            spec = inner["data"]["updateDataModel"]["value"]["spec"]
+            wells = spec["data"]["values"]
+            assert len(wells) == 142
+            assert spec["layer"][0]["mark"]["type"] == "image"
+            assert spec["layer"][0]["encoding"]["x2"]["field"] == "lon_max"
+            assert spec["layer"][0]["encoding"]["y2"]["field"] == "lat_min"
+            lon_dom = spec["layer"][0]["encoding"]["x"]["scale"]["domain"]
+            lat_dom = spec["layer"][0]["encoding"]["y"]["scale"]["domain"]
+            for w in wells:
+                assert lon_dom[0] <= w["lon"] <= lon_dom[1], f"Well {w['well_id']} lon {w['lon']} outside {lon_dom}"
+                assert lat_dom[0] <= w["lat"] <= lat_dom[1], f"Well {w['well_id']} lat {w['lat']} outside {lat_dom}"
+        if "updateComponents" in inner["data"]:
+            comps = {c["id"]: c for c in inner["data"]["updateComponents"]["components"]}
+            assert "card-sat-image" not in comps, "Duplicate static satellite image component must not be present"
+            assert comps["card-column"]["children"] == ["card-title", "card-caption", "card-chart"]
 
-    # 2. Test 2 Production Plot A2UI surface emission
+    # 2. Test Turn 2 Multi-surface emission (Production Plot + Chan Diagnostic in one turn)
+    from agent.adk_tools import adk_chan_diagnostic, adk_generate_report, adk_rank_candidates
     adk_plot_production(well_id="GK-129", months=36)
-    prod_content = emit_a2ui_surface()
-    assert prod_content is not None
-    assert len(prod_content.parts) == 3
+    adk_chan_diagnostic(well_id="GK-129")
+    turn2_content = emit_a2ui_surface()
+    assert turn2_content is not None
+    assert len(turn2_content.parts) == 6  # 3 parts for production + 3 parts for chan
 
+    # 3. Test Turn 3 Ranking A2UI surface emission
+    adk_rank_candidates(field="Geleki")
+    turn3_content = emit_a2ui_surface()
+    assert turn3_content is not None
+    assert len(turn3_content.parts) == 3
 
+    # 4. Test Turn 4 Report & Schedule A2UI surface emission
+    adk_generate_report(field="Geleki", period="MONTHLY")
+    turn4_content = emit_a2ui_surface()
+    assert turn4_content is not None
+    assert len(turn4_content.parts) == 3
+
+    # 5. Test Google Maps Dedicated Tool & A2UI Launch Card
+    g_res = adk_open_google_maps(field="Geleki", well_id="GK-055")
+    assert g_res["status"] == "SUCCESS"
+    assert "https://www.google.com/maps/@" in g_res["google_maps_satellite_url"]
+    assert g_res["well_metadata"]["well_id"] == "GK-055"
+    gmaps_content = emit_a2ui_surface()
+    assert gmaps_content is not None
+    assert len(gmaps_content.parts) == 3
+    for p in gmaps_content.parts:
+        raw = p.inline_data.data.decode("utf-8")
+        assert "<a2a_datapart_json>" in raw
+        assert '"mimeType":"application/json+a2ui"' in raw

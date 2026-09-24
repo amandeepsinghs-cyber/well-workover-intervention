@@ -118,10 +118,12 @@ from agent.render.a2ui_surfaces import (
     A2A_DATA_PART_CLOSE_TAG,
     A2A_DATA_PART_OPEN_TAG,
     build_chan_chart_surface,
+    build_google_maps_card_surface,
     build_production_chart_surface,
     build_ranking_chart_surface,
+    build_report_surface,
     build_well_map_surface,
-    pop_queued_a2ui_surface,
+    pop_queued_a2ui_surfaces,
 )
 
 
@@ -145,7 +147,7 @@ def sanitize_llm_request_history(
     llm_request: LlmRequest | None = None,
     **kwargs: object,
 ) -> LlmResponse | None:
-    """Scrub historical <a2a_datapart_json> envelopes so the LLM never imitates UI JSON."""
+    """Scrub historical <a2a_datapart_json> envelopes (both inline_data and text) so the LLM never reads or imitates UI JSON or base64 images."""
     if llm_request is None or not getattr(llm_request, "contents", None):
         return None
     for content in llm_request.contents:
@@ -153,6 +155,16 @@ def sanitize_llm_request_history(
             continue
         cleaned_parts: list[types.Part] = []
         for part in content.parts:
+            part_meta = getattr(part, "part_metadata", None) or {}
+            if isinstance(part_meta, dict) and part_meta.get("mimeType") == "application/json+a2ui":
+                continue
+            inline_blob = getattr(part, "inline_data", None)
+            if inline_blob is not None:
+                raw_bytes = getattr(inline_blob, "data", b"") or b""
+                if isinstance(raw_bytes, str):
+                    raw_bytes = raw_bytes.encode("utf-8", errors="ignore")
+                if b"a2a_datapart_json" in raw_bytes or b"application/json+a2ui" in raw_bytes:
+                    continue
             text = getattr(part, "text", None)
             if text and A2A_DATA_PART_OPEN_TAG in text:
                 stripped = _remove_datapart_blobs(text)
@@ -160,7 +172,15 @@ def sanitize_llm_request_history(
                     cleaned_parts.append(types.Part(text=stripped))
             else:
                 cleaned_parts.append(part)
-        content.parts = cleaned_parts or [types.Part(text="")]
+        content.parts = cleaned_parts or [types.Part(text="(Visual card rendered in UI.)")]
+
+    if llm_request.config is None:
+        llm_request.config = types.GenerateContentConfig(max_output_tokens=2048)
+    elif (
+        not getattr(llm_request.config, "max_output_tokens", None)
+        or llm_request.config.max_output_tokens > 2048
+    ):
+        llm_request.config.max_output_tokens = 2048
     return None
 
 
@@ -168,13 +188,21 @@ def strip_fabricated_a2ui(
     llm_response: LlmResponse | None = None,
     **kwargs: object,
 ) -> LlmResponse | None:
-    """Remove any fabricated <a2a_datapart_json> tags from model text output."""
+    """Remove any fabricated <a2a_datapart_json> tags from model output."""
     if llm_response is None or llm_response.content is None:
         return None
     parts = llm_response.content.parts or []
     cleaned: list[types.Part] = []
     removed = 0
     for part in parts:
+        inline_blob = getattr(part, "inline_data", None)
+        if inline_blob is not None:
+            raw_bytes = getattr(inline_blob, "data", b"") or b""
+            if isinstance(raw_bytes, str):
+                raw_bytes = raw_bytes.encode("utf-8", errors="ignore")
+            if b"a2a_datapart_json" in raw_bytes:
+                removed += 1
+                continue
         text = getattr(part, "text", None)
         if not text or A2A_DATA_PART_OPEN_TAG not in text:
             cleaned.append(part)
@@ -193,34 +221,57 @@ def emit_a2ui_surface(
     callback_context: CallbackContext | None = None,
     **kwargs: object,
 ) -> types.Content | None:
-    """Attach the queued A2UI v0.9 VegaChart surface after the agent completes its prose response."""
+    """Attach all queued A2UI v0.9 surfaces after the agent completes its prose response."""
     state_dict = callback_context.state if callback_context is not None else None
-    req = pop_queued_a2ui_surface(state_dict=state_dict)
-    if not req:
+    reqs = pop_queued_a2ui_surfaces(state_dict=state_dict)
+    if not reqs:
         return None
 
-    kind = req.get("kind", "map")
-    well_id = req.get("well_id", "GK-129")
-    field = req.get("field", "Geleki")
-    months = int(req.get("months", 36))
+    all_parts: list[types.Part] = []
+    for req in reqs:
+        kind = req.get("kind", "map")
+        well_id = req.get("well_id", "GK-129")
+        field = req.get("field", "Geleki")
+        months = int(req.get("months", 36))
+        period = str(req.get("period", "WEEKLY"))
+        focus_well_id = str(req.get("focus_well_id", ""))
+        cluster = str(req.get("cluster", ""))
+        radius_deg = float(req.get("radius_deg", 0.018))
 
-    if kind == "map":
-        parts = build_well_map_surface(field=field)
-    elif kind == "production":
-        parts = build_production_chart_surface(well_id=well_id, months=months)
-    elif kind == "chan":
-        parts = build_chan_chart_surface(well_id=well_id)
-    elif kind == "ranking":
-        parts = build_ranking_chart_surface()
-    else:
+        if kind == "map":
+            all_parts.extend(
+                build_well_map_surface(
+                    field=field,
+                    focus_well_id=focus_well_id,
+                    cluster=cluster,
+                    radius_deg=radius_deg,
+                )
+            )
+        elif kind == "production":
+            all_parts.extend(build_production_chart_surface(well_id=well_id, months=months))
+        elif kind == "chan":
+            all_parts.extend(build_chan_chart_surface(well_id=well_id))
+        elif kind == "ranking":
+            all_parts.extend(build_ranking_chart_surface())
+        elif kind == "report":
+            all_parts.extend(build_report_surface(field=field, period=period))
+        elif kind in ("gmaps", "google_maps"):
+            all_parts.extend(
+                build_google_maps_card_surface(
+                    field=field,
+                    well_id=well_id,
+                    cluster=cluster,
+                )
+            )
+
+    if not all_parts:
         return None
-
-    return types.Content(role="model", parts=parts)
+    return types.Content(role="model", parts=all_parts)
 
 
 root_agent = WorkoverPlannerAgent(
     name="geleki_workover_intervention_agent",
-    model="gemini-2.5-pro",
+    model="gemini-2.5-flash",
     description="Agentic Workover & Well Intervention Planner for ONGC Assam Asset (Geleki Field).",
     instruction=SYSTEM_PROMPT,
     tools=ADK_TOOLS,
